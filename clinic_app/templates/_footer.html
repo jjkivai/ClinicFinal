@@ -1,0 +1,91 @@
+{% load static %}
+
+<footer class="p-4 bg-white sm:p-6 dark:bg-gray-800 w-full">
+    <div class="mx-auto max-w-screen-xl">
+        <div class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0 sm:items-center">
+                <a href="/" class="flex items-center">
+                    <img src="{% static 'images/logos/Karen-cardiocare-logo-full.png' %}" class="m-auto h-12"
+                        alt="karen Cardiocare Logo" />
+                </a>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                <div>
+                    <h2 class="mb-2 sm:mb-4 text-sm font-semibold text-gray-900 uppercase dark:text-white">Hours</h2>
+                    <ul class="text-gray-600 dark:text-gray-400">
+                        <li>
+                            <p>Mon, Wed, Thur</p>
+                        </li>
+                        <li class="mb-1">
+                            <p>9AM - 5PM</p>
+                        </li>
+                        <li>
+                            <p>Weekends: Closed</p>
+                        </li>
+                        <li>
+                            <p>Holidays: Closed</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="mb-2 sm:mb-4 text-sm font-semibold text-gray-900 uppercase dark:text-white">Location</h2>
+                    <ul class="text-gray-600 dark:text-gray-400 hover:underline hover:cursor-pointer"
+                        onclick="window.open('https://maps.app.goo.gl/9Zw4W1N1knEgUpAp8')">
+                        <li>
+                            <p>Zamani Business Park,</p>
+                        </li>
+                        <li>
+                            <p>Tree Lane Road, Karen</p>
+                        </li>
+                        <li>
+                            <p>Nairobi</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-2 sm:mb-4 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact Us
+                    </h2>
+                    <ul class="text-gray-600 dark:text-gray-400">
+                        <li class="flex items-center space-x-1">
+                            <svg class="w-5 h-5 flex-shrink-0 text-gray-800 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M2.038 5.61A2.01 2.01 0 0 0 2 6v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6c0-.12-.01-.238-.03-.352l-.866.65-7.89 6.032a2 2 0 0 1-2.429 0L2.884 6.288l-.846-.677Z" />
+                                <path
+                                    d="M20.677 4.117A1.996 1.996 0 0 0 20 4H4c-.225 0-.44.037-.642.105l.758.607L12 10.742 19.9 4.7l.777-.583Z" />
+                            </svg>
+                            <span class="text-xs md:text-base leading-none">:</span>
+                            <a href="mailto:karencardiocare@gmail.com" class="hover:underline text-xs md:text-base">
+                                karencardiocare@gmail.com
+                            </a>
+                        </li>
+
+
+
+                        <li class="flex items-center space-x-1">
+                            <svg class="w-5 h-5 flex-shrink-0 text-gray-800 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M7.978 4a2.553 2.553 0 0 0-1.926.877C4.233 6.7 3.699 8.751 4.153 10.814c.44 1.995 1.778 3.893 3.456 5.572 1.68 1.679 3.577 3.018 5.57 3.459 2.062.456 4.115-.073 5.94-1.885a2.556 2.556 0 0 0 .001-3.861l-1.21-1.21a2.689 2.689 0 0 0-3.802 0l-.617.618a.806.806 0 0 1-1.14 0l-1.854-1.855a.807.807 0 0 1 0-1.14l.618-.62a2.692 2.692 0 0 0 0-3.803l-1.21-1.211A2.555 2.555 0 0 0 7.978 4Z" />
+                            </svg>
+                            <span class="text-xs md:text-base leading-none">:</span>
+                            <a href="tel:+254722763160" class="hover:underline text-sm sm:text-md">
+                                +254 722 763160
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© {% now "Y" %} <a href="/"
+                    class="hover:underline">Karen Cardiocare</a>. All Rights Reserved.
+            </span>
+        </div>
+    </div>
+</footer>

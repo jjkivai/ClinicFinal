@@ -1,0 +1,67 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./templates/**/*.html",
+    "**/templates/**/*.html",
+    "./node_modules/flowbite/**/*.js",
+  ],
+  theme: {
+    extend: {
+      backgroundImage: {
+        "doctor-background": "url('/static/doctor_background.jpg')",
+      },
+      colors: {
+        primary: {
+          50: "#ffe5ea",
+          100: "#ffccd5",
+          200: "#ff99ab",
+          300: "#ff6680",
+          400: "#ff3355",
+          500: "#eb183c",
+          600: "#d21434",
+          700: "#b2102b",
+          800: "#930c23",
+          900: "#73081a",
+          950: "#5a0614",
+        },
+      },
+    },
+    fontFamily: {
+      body: [
+        "Roboto",
+        "ui-sans-serif",
+        "system-ui",
+        "-apple-system",
+        "system-ui",
+        "Segoe UI",
+        "Roboto",
+        "Helvetica Neue",
+        "Arial",
+        "Noto Sans",
+        "sans-serif",
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji",
+      ],
+      sans: [
+        "Roboto",
+        "ui-sans-serif",
+        "system-ui",
+        "-apple-system",
+        "system-ui",
+        "Segoe UI",
+        "Roboto",
+        "Helvetica Neue",
+        "Arial",
+        "Noto Sans",
+        "sans-serif",
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji",
+      ],
+    },
+  },
+  plugins: [require("flowbite/plugin")],
+};

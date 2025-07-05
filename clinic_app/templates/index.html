@@ -1,0 +1,111 @@
+{% extends "_base.html" %}
+{% load static %}
+
+{% block content %}
+<section class="bg-gray-200 dark:bg-gray-900">
+    <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 md:grid-cols-2 lg:grid-cols-12">
+        <div class="mr-auto place-self-center lg:col-span-7">
+            <h1
+                class="max-w-2xl mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-3xl xl:text-4xl dark:text-white">
+                We diagnose and Treat
+            </h1>
+            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                At Karen Cardiocare Clinic, <span class="text-primary-700">your health is our priority</span>. We
+                diagnose and
+                treat your heart and other medical conditions with expert care and advanced treatments, empowering you
+                to take control of your heart health and build a healthier future.
+            </p>
+
+            <div class="flex flex-wrap gap-4">
+                <a href="tel:+254722763160"
+                    class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                    <span class="flex items-center gap-2">
+                        <svg class="w-5 h-5 flex-shrink text-white dark:text-white" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M7.978 4a2.553 2.553 0 0 0-1.926.877C4.233 6.7 3.699 8.751 4.153 10.814c.44 1.995 1.778 3.893 3.456 5.572 1.68 1.679 3.577 3.018 5.57 3.459 2.062.456 4.115-.073 5.94-1.885a2.556 2.556 0 0 0 .001-3.861l-1.21-1.21a2.689 2.689 0 0 0-3.802 0l-.617.618a.806.806 0 0 1-1.14 0l-1.854-1.855a.807.807 0 0 1 0-1.14l.618-.62a2.692 2.692 0 0 0 0-3.803l-1.21-1.211A2.555 2.555 0 0 0 7.978 4Z" />
+                        </svg>
+                        Request Appointment
+                    </span>
+                </a>
+
+                <a href="about-us/"
+                    class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white rounded-lg bg-gray-500 hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-700">
+                    <span class="flex items-center gap-2">
+                        Learn More
+                    </span>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="lg:mt-0 lg:col-span-5 lg:flex hidden md:block">
+            <img src="{% static 'images/background/Doctor.png'  %}" alt="mockup">
+        </div>
+    </div>
+</section>
+<section class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <div class="max-w-screen mb-8 lg:mb-16">
+            <h2 class="mb-4 text-2xl tracking-tight text-center font-extrabold text-gray-900 dark:text-white">Crafted
+                for Your
+                Health</h2>
+            <p class="text-gray-500 text-center text-md dark:text-gray-400">We provide
+                expert care and innovative treatments to improve your health, enhance your well-being, and ensure
+                a healthier future.</p>
+        </div>
+        <div class="space-y-8 md:grid md:grid-cols-3 md:gap-12 md:space-y-0">
+            <div class="flex flex-col items-center text-center">
+                <div
+                    class="flex justify-center items-center mb-4 w-12 h-12 rounded-full lg:w-24 lg:h-24 bg-primary-100 dark:bg-primary-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 48 48">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M10.345 11.988C8.885 13.846 8 16.384 8 19.035c0 1.537.264 3.009.73 4.41h8.685l3.388-6.024l2.117 7.41l2.59-3.331H32v2h-5.51l-4.41 5.67l-1.883-6.591l-1.612 2.865H4v-2h2.636A15.8 15.8 0 0 1 6 19.034c0-3.075 1.021-6.054 2.772-8.282C10.528 8.518 13.056 7 16.032 7c3.503 0 6.167 1.963 7.968 4.734C25.8 8.964 28.465 7 31.969 7c2.975 0 5.504 1.518 7.26 3.753C40.978 12.98 42 15.96 42 19.035c0 6.582-4.544 12.079-8.842 15.831a49 49 0 0 1-8.494 5.914l-.151.08l-.04.022l-.012.005l-.003.002h-.001S24.456 40.89 24 40l-.434.9l-.006-.002l-.014-.007l-.05-.025l-.188-.094a31 31 0 0 1-.688-.363a44 44 0 0 1-2.394-1.402c-1.951-1.224-4.51-3.027-6.918-5.333c-1.284-1.23-2.53-2.61-3.62-4.128a1 1 0 1 1 1.624-1.166c1.005 1.4 2.166 2.687 3.38 3.85c2.279 2.184 4.72 3.905 6.597 5.083a42 42 0 0 0 2.698 1.559l.252-.141a47 47 0 0 0 7.603-5.371C36.044 29.691 40 24.705 40 19.034c0-2.65-.885-5.189-2.344-7.047C36.2 10.137 34.213 9 31.969 9c-3.103 0-5.51 2.02-7.071 5.202L24 16.03l-.898-1.828C21.541 11.02 19.134 9 16.032 9c-2.245 0-4.232 1.136-5.687 2.988M24 40l-.434.9l.448.217l.443-.227z"
+                            clip-rule="evenodd" />
+                    </svg>
+
+                </div>
+                <h3 class="mb-2 text-xl font-bold dark:text-white">Cardiology Consultations</h3>
+                <p class="text-gray-500 dark:text-gray-400">We combine vast experience with cutting-edge
+                    medical knowledge to provide exceptional care, ensuring the finest guidance and
+                    treatment for your heart health needs.</p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <div
+                    class="flex justify-center items-center mb-4 w-12 h-12 rounded-full bg-primary-100 lg:h-24 lg:w-24 dark:bg-primary-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 48 48">
+                        <g fill="currentColor">
+                            <path
+                                d="M12 29a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2zm-1 6a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2h-8a1 1 0 0 1-1-1" />
+                            <path fill-rule="evenodd"
+                                d="M12 9a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3h3a3 3 0 0 1 3 3v27a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3V12a3 3 0 0 1 3-3zM8 23h6.171l1.47-2.466l1.815 6.661L21.49 22h4.278a1 1 0 0 0 0-2H20.51l-2.177 2.805l-2-7.339L13.035 21H8v-9a1 1 0 0 1 1-1h3a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3h3a1 1 0 0 1 1 1v27a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1zM24 9v2a1 1 0 0 1-1 1h-8a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1m15 5a3 3 0 0 0-3 3v20.303l3 4.5l3-4.5V17a3 3 0 0 0-3-3m-1 3a1 1 0 1 1 2 0v2h-2zm0 19.697V21h2v15.697l-1 1.5z"
+                                clip-rule="evenodd" />
+                        </g>
+                    </svg>
+                </div>
+                <h3 class="mb-2 text-xl font-bold dark:text-white">Cardiac Evaluation</h3>
+                <p class="text-gray-500 dark:text-gray-400">From preventive checkups and lifestyle guidance to targeted
+                    treatments, our clinic is dedicated to enhancing your well-being and helping you lead a healthier,
+                    happier life.</p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <div
+                    class="flex justify-center items-center mb-4 w-12 h-12 rounded-full bg-primary-100 lg:h-24 lg:w-24 dark:bg-primary-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 48 48">
+                        <g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd">
+                            <path
+                                d="M13 13a1 1 0 0 0-1 1v15.96a1 1 0 0 0 1 1h10v2.142h-4.538v2h11.077v-2H25v-2.143h10a1 1 0 0 0 1-1V14a1 1 0 0 0-1-1zm9.907 2.694l-3.403 5.985h-5.658v1.987h6.833l1.619-2.847l1.891 6.548l4.43-5.633h4.53a1 1 0 0 0 1.005-.993a1 1 0 0 0-1.005-.994h-5.513l-2.602 3.31z" />
+                            <path
+                                d="M9 6a3 3 0 0 0-3 3v30a3 3 0 0 0 3 3h30a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3zm31 3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v30a1 1 0 0 0 1 1h30a1 1 0 0 0 1-1z" />
+                        </g>
+                    </svg>
+                </div>
+                <h3 class="mb-2 text-xl font-bold dark:text-white">Advanced Diagnostic Technology</h3>
+                <p class="text-gray-500 dark:text-gray-400">We do ECG, Echo, Holter, Stress Tests, and Interventional
+                    Cardiac Services amongst other Medical and Laboratory
+                    Services as needed.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
