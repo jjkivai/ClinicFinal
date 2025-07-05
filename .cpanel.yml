@@ -1,0 +1,23 @@
+deployment:
+  tasks:
+    # Set paths
+    - export REPO_DIR=/home/karencar//repositories/ClinicFinal
+    - export APP_DIR=/home/karencar/myapp/Python_Host
+    - export DJANGO_SETTINGS_MODULE=Clinic.settings
+
+    # Copy updated code to app directory (delete old files first for clean sync)
+    - rm -rf $APP_DIR/*
+    - cp -R $REPO_DIR/* $APP_DIR/
+
+    # Activate virtualenv
+    - source $VENV_DIR/bin/activate
+
+    # Install/update Python packages
+    - cd $APP_DIR
+    - pip install -r requirements.txt
+
+    # Run Django migrations
+    - python manage.py migrate
+
+    # Collect static files
+    - python manage.py collectstatic --noinput

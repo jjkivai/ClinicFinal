@@ -20,12 +20,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-44t-pd-^!t1@0&hs0!%)s)xqm!3a&9!w!-04(epji^vio!8=jb'
+SECRET_KEY = '+fpkf(xe7@@u%^w5kipgp*bwpx1&hlhj_n13rb7@l2m=5#e0=a'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["karencardiocare.com", "www.karencardiocare.com"]
 
 
 # Application definition
@@ -161,3 +158,10 @@ PHONENUMBER_DEFAULT_REGION = 'KE'
 
 # Custom User Model
 AUTH_USER_MODEL = 'account_app.User'
+
+# CSRF Trusted Origins
+CSRF_COOKIE_SECURE = True
+
+SECURE_SSL_REDIRECT = True
+
+SESSION_COOKIE_SECURE = True
