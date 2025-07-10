@@ -2,8 +2,8 @@
 deployment:
   tasks:
     # Set paths
-    - export REPO_DIR=/home/karencar//repositories/ClinicFinal
-    - export APP_DIR=/home/karencar/myapp/Python_Host
+    - export REPO_DIR=/home/karencar/repositories/ClinicFinal
+    - export APP_DIR=/home/karencar/Python_Host
     - export DJANGO_SETTINGS_MODULE=Clinic.settings
 
     # Copy updated code to app directory (delete old files first for clean sync)
@@ -11,7 +11,7 @@ deployment:
     - cp -R $REPO_DIR/* $APP_DIR/
 
     # Activate virtualenv
-    - source $VENV_DIR/bin/activate
+    - ource /home/karencar/virtualenv/Python_Host/3.12/bin/activate
 
     # Install/update Python packages
     - cd $APP_DIR
