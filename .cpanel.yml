@@ -11,7 +11,7 @@ deployment:
     - cp -R $REPO_DIR/* $APP_DIR/
 
     # Activate virtualenv
-    - ource /home/karencar/virtualenv/Python_Host/3.12/bin/activate
+    - source /home/karencar/virtualenv/Python_Host/3.12/bin/activate
 
     # Install/update Python packages
     - cd $APP_DIR
