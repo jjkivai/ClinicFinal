@@ -155,7 +155,7 @@ if DEBUG:
     MEDIA_ROOT = BASE_DIR / 'media'
     STATIC_ROOT = BASE_DIR / 'staticfiles'
 else:
-    STATIC_ROOT = '/home/karencar/public_html/staticfiles'
+    STATIC_ROOT = '/home/karencar/public_html/static'
     MEDIA_ROOT = '/home/karencar/public_html/media'
 
 # Default primary key field type
