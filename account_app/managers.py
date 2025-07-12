@@ -44,6 +44,8 @@ class UserManager(BaseUserManager):
     def create_superuser(self, username, email, password=None, **extra_fields):
         if not email:
             raise ValueError('The Email field must be set')
+        if not extra_fields.get('phone_number'):
+            raise ValueError('Superusers must have a phone number.')
         extra_fields.setdefault('is_staff', True)
         extra_fields.setdefault('is_superuser', True)
         return self.create_user(username, email, password, **extra_fields)

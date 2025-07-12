@@ -1,12 +1,11 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser, AbstractBaseUser
-
 from phonenumber_field.modelfields import PhoneNumberField
 
 # App User Model
 class User(AbstractUser):
     email = models.EmailField(unique=True, blank=True, null=True)
-    phone_number = PhoneNumberField(unique=True)
+    # phone_number = PhoneNumberField()
     
     ROLES = (
         ('doctor', 'Doctor'),
@@ -18,7 +17,6 @@ class User(AbstractUser):
     
     def __str__(self):
         return self.username
-    
     
     
 # Role Model

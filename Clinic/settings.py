@@ -45,10 +45,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sitemaps',
     # Third Part Apps
     "django_extensions",
     "compressor",
     "phonenumber_field",
+    "markdownx",
     # Local Apps
     "account_app",
     "clinic_app",
@@ -95,9 +97,12 @@ WSGI_APPLICATION = 'Clinic.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "OPTIONS": {
+            "read_default_file": "my.cnf",
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        },
     }
 }
 
@@ -181,3 +186,8 @@ CSRF_COOKIE_SECURE = not DEBUG
 SECURE_SSL_REDIRECT = not DEBUG
 
 SESSION_COOKIE_SECURE = not DEBUG
+
+
+# MarkdownX Settings
+MARKDOWNX_EDITOR_RESIZABLE = False
+MARKDOWNX_PREVIEW = True

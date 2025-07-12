@@ -5,11 +5,11 @@ from account_app.models import User
 # Register your models here.
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
-    list_display = ['username', 'email', 'phone_number', 'is_active', 'is_staff']
+    list_display = ['username', 'email', 'is_active', 'is_staff']
     list_filter = ['is_active', 'is_staff']
-    search_fields = ['username', 'email', 'phone_number']
+    search_fields = ['username', 'email']
     fieldsets = (
-        ("User Details", {'fields': ('username', "first_name", "last_name", 'email', 'phone_number', )}),
+        ("User Details", {'fields': ('username', "first_name", "last_name", 'email', )}),
         ('Permissions', {'fields': ('is_active', 'is_staff', 'roles', 'user_permissions', 'groups')}),
         ('Log in', {'fields': ('last_login', 'date_joined',)}),
     )
@@ -17,7 +17,7 @@ class UserAdmin(admin.ModelAdmin):
     add_fieldsets = (
         (None, {
             'classes': ('wide',),
-            'fields': ('username', 'email', 'phone_number', 'password1', 'password2', 'is_active', 'is_staff', 'roles'),
+            'fields': ('username', 'email', 'password1', 'password2', 'is_active', 'is_staff', 'roles'),
         }),
     )
     readonly_fields = ['last_login', 'date_joined']
