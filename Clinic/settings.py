@@ -100,7 +100,7 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
         "OPTIONS": {
-            "read_default_file": "my.cnf",
+            "read_default_file": "my.cnf" if not DEBUG else "/home/karencar/etc/my.cnf",
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
         },
     }
