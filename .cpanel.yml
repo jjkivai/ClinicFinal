@@ -7,7 +7,7 @@ deployment:
     - export DJANGO_SETTINGS_MODULE=Clinic.settings
 
     # Copy updated code to app directory (delete old files first for clean sync)
-    - rm -rf $APP_DIR/*
+    - find $APP_DIR -mindepth 1 ! -name 'my.cnf' -exec rm -rf {} +
     - cp -R $REPO_DIR/* $APP_DIR/
 
     # Activate virtualenv
