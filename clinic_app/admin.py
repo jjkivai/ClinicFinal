@@ -30,8 +30,9 @@ class ArticleAdmin(MarkdownxModelAdmin):
     # fields = ('title', 'content', 'created_at')
     readonly_fields = ('created_at',)
     fieldsets = (
+        
         (None, {
-            'fields': ('content',),
+            'fields': ('title','published','content',),
             'classes': ('wide',),
         }),
     )
