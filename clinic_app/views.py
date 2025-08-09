@@ -13,7 +13,7 @@ def education_view(request):
 
 def education_detail_view(request, slug):
     article = get_object_or_404(Article, slug=slug, published=True)
-    related_articles = Article.objects.exclude(slug=slug)[:4]  # Get 4 related articles excluding the current one
+    related_articles = Article.objects.exclude(slug=slug, published=True)[:4]  # Get 4 related articles excluding the current one
     if not related_articles:
-        related_articles = Article.objects.all()[:4]  # Fallback to any 4 articles if none are related
+        related_articles = Article.objects.filter(published=True)[:4]  # Fallback to any 4 articles if none are related
     return render(request, "blog/blog.html", {"article": article, "related_articles": related_articles})
