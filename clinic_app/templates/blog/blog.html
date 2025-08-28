@@ -15,10 +15,12 @@
                         <div>
                             <p rel="author" class="text-xl font-bold text-gray-900 dark:text-white">Dr. Jayne Kivai</p>
                             <p class="text-base">Cardiologist</p>
+                            {% comment %}
                             <p class="text-base"><time pubdate
                                     datetime="{{ article.created_at.timestamp|date:'Y-m-d' }}"
                                     title="{{article.created_at|ordinal_date}}">{{article.created_at|ordinal_date}}</time>
                             </p>
+                            {% endcomment %}
                         </div>
                     </div>
                 </address>

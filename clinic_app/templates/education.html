@@ -28,7 +28,9 @@
                         </svg>
                         {{post.get_type_display}}
                     </span>
+                    {% comment %}
                     <span class="text-sm">{{post.time_stamp}}</span>
+                    {% endcomment %}
                 </div>
                 <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a
                         href="{% url 'clinic_app:education-detail' slug=post.slug %}">{{post.title}}</a></h2>
