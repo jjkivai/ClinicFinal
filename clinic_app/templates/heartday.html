@@ -1,0 +1,67 @@
+{% extends "_base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- HERO SECTION -->
+<section class="bg-primary-700 text-white py-16">
+    <div class="max-w-screen-xl mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">❤️ World Heart Day - Take Care of Your Heart</h1>
+        <p class="text-lg md:text-xl mb-8">
+            Join us this September 29 to celebrate your heart. Small steps today make a lifetime of difference.
+        </p>
+        <div class="flex justify-center gap-4">
+            <a href="tel:+254722763160"
+                class="bg-white text-primary-600 font-semibold py-3 px-6 rounded-lg hover:bg-gray-100">
+                Book a Heart Check
+            </a>
+            <a href="/education" class="border border-white py-3 px-6 rounded-lg hover:bg-white hover:text-red-600">
+                Learn More
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES SECTION -->
+<section id="learn" class="py-16">
+    <div class="max-w-screen-xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">How You Can Protect Your Heart</h2>
+        <div class="grid gap-10 md:grid-cols-3">
+
+            <div class="bg-white rounded-2xl shadow p-8 text-center">
+                <div class="text-red-600 text-5xl mb-4">🥗</div>
+                <h3 class="text-xl font-semibold mb-2">Eat Healthy</h3>
+                <p>Choose fruits, vegetables, and whole grains. Limit salt, sugar, and trans fats for a stronger
+                    heart.</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow p-8 text-center">
+                <div class="text-red-600 text-5xl mb-4">🚶</div>
+                <h3 class="text-xl font-semibold mb-2">Stay Active</h3>
+                <p>Just 30 minutes of daily exercise can lower your risk of heart disease and boost your mood.</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow p-8 text-center">
+                <div class="text-red-600 text-5xl mb-4">🩺</div>
+                <h3 class="text-xl font-semibold mb-2">Check Regularly</h3>
+                <p>Monitor your blood pressure, cholesterol, and sugar levels to catch issues early.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section id="book" class="bg-red-50 py-16">
+    <div class="max-w-screen-md mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-6 text-red-700">Heart Health Check ❤️</h2>
+        <p class="mb-8 text-lg">
+            Visit us on <strong>September 29</strong> for blood pressure checks, lifestyle tips, and
+            heart health guidance.
+        </p>
+        <a href="tel:+254722763160" class="bg-red-600 text-white py-3 px-8 rounded-lg font-semibold hover:bg-red-700">
+            Call to Book: +254722763160
+        </a>
+    </div>
+</section>
+
+{% endblock content %}

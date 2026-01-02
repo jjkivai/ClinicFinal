@@ -112,10 +112,9 @@ TEMPLATES = [
 WSGI_APPLICATION = 'Clinic.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
+# Production Database
 
-DATABASES = {
+DATABASES_PROD = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
         "OPTIONS": {
@@ -124,6 +123,22 @@ DATABASES = {
         },
     }
 }
+
+# default fallback to sqlite3
+DATABASES_DEV = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+    }
+}
+
+# If not in debug mode, use production database
+if not DEBUG:
+    DATABASES = DATABASES_PROD
+else:
+    DATABASES = DATABASES_DEV
+
+
 
 
 # Password validation

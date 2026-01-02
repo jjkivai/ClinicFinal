@@ -5,6 +5,9 @@ from .models import Article
 def index(request):
     return render(request, "index.html")
 
+def heart_day_view(request):
+    return render(request, "heartday.html")
+
 def education_view(request):
     articles = Article.objects.filter(published=True).order_by('-created_at')
     if not articles:

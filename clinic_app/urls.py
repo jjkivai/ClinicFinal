@@ -11,5 +11,6 @@ urlpatterns = [
     path("education/", view=education_view, name="education"),
     path("education/<slug:slug>/", view=education_detail_view, name="education-detail"),
     path("blog/", view=TemplateView.as_view(template_name='blog/blog.html'), name="blog"),
-
+    # path("heart-day/", view=TemplateView.as_view(template_name='heartday.html'), name="heart-day"),
+    path("services/", view=TemplateView.as_view(template_name='services.html'), name="services"),
 ]
