@@ -19,6 +19,10 @@ def render_routes(context):
             'name': 'Education',
         },
         {
+            'url': 'clinic_app:services',
+            'name': 'Services',
+        },
+        {
             'url': 'clinic_app:about-us',
             'name': 'About Us',
         }
