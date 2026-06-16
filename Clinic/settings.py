@@ -233,7 +233,7 @@ MARKDOWNX_MARKDOWN_EXTENSIONS = [
 
 
 # Celery / Redis
-REDIS_URL = "redis://localhost:6379/0" if DEBUG else os.getenv("CELERY_BROKER_URL")
+REDIS_URL = "redis://localhost:6379/0" if DEBUG else os.getenv("REDIS_URL")
 
 CELERY_BROKER_URL = REDIS_URL
 CELERY_RESULT_BACKEND = REDIS_URL
