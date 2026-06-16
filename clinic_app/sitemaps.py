@@ -12,4 +12,4 @@ class ArticleSitemap(Sitemap):
         return obj.created_at
     
     def location(self, obj):
-        return f"/educattion/{obj.slug}/"
+        return f"/education/{obj.slug}/"

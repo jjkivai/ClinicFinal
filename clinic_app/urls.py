@@ -1,7 +1,7 @@
 from django.urls import path
 
-from clinic_app.views import education_view, education_detail_view
-from django.views.generic import TemplateView
+from clinic_app.views import education_view, education_detail_view, contact
+from django.views.generic import RedirectView, TemplateView
 
 app_name = "clinic_app"
 
@@ -13,4 +13,6 @@ urlpatterns = [
     path("blog/", view=TemplateView.as_view(template_name='blog/blog.html'), name="blog"),
     # path("heart-day/", view=TemplateView.as_view(template_name='heartday.html'), name="heart-day"),
     path("services/", view=TemplateView.as_view(template_name='services.html'), name="services"),
+    path("contact-us/", view=contact, name="contact-us"),
+    path("contact/", RedirectView.as_view(url='/contact-us/', permanent=False), name="contact"),
 ]

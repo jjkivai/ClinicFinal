@@ -229,3 +229,24 @@ MARKDOWNX_PREVIEW = True
 MARKDOWNX_MARKDOWN_EXTENSIONS = [
     'tables'
 ]
+
+
+
+# Celery / Redis
+REDIS_URL = "redis://localhost:6379/0" if DEBUG else os.getenv("CELERY_BROKER_URL")
+
+CELERY_BROKER_URL = REDIS_URL
+CELERY_RESULT_BACKEND = REDIS_URL
+CELERY_ACCEPT_CONTENT = ["json"]
+CELERY_TASK_SERIALIZER = "json"
+
+# Email (swap for your provider)
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "mail.karencardiocare.com"
+EMAIL_PORT = 465
+EMAIL_USE_TLS = False    # ← TLS is for port 587
+EMAIL_USE_SSL = True     # ← SSL is for port 465
+EMAIL_HOST_USER = "info@karencardiocare.com"
+EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")
+DEFAULT_FROM_EMAIL = "info@karencardiocare.com"
+TO_EMAIL = os.getenv("TO_EMAIL")
